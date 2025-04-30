@@ -2,7 +2,7 @@ data "azurerm_client_config" "current" {}
 
 resource "azurerm_resource_group" "mlrg" {
   name     = "ml_rg-resources"
-  location = "West Europe"
+  location = "West Europe" /* this a location */ #another way of commenting 
 }
 
 resource "azurerm_application_insights" "applicationinsight" {
