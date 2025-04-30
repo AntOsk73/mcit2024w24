@@ -10,7 +10,7 @@ resource "azurerm_resource_group" "mlrg" {
   location            = azurerm_resource_group.mlrg.location
   resource_group_name = azurerm_resource_group.mlrg.name
   application_type    = "web"
-}  be careful don't modify anything between line 8 to 13
+}  
 
 resource "azurerm_key_vault" "azurekeyvault" {
   name                = "workspaceexamplekeyvault"
