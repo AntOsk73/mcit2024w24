@@ -5,12 +5,12 @@ resource "azurerm_resource_group" "mlrg" {
   location = "West Europe" /* this a location */ #another way of commenting 
 }
 
-resource "azurerm_application_insights" "applicationinsight" {
+/*resource "azurerm_application_insights" "applicationinsight" {
   name                = "workspace-example-ai"
   location            = azurerm_resource_group.mlrg.location
   resource_group_name = azurerm_resource_group.mlrg.name
   application_type    = "web"
-}
+}  be careful don't modify anything between line 8 to 13 */
 
 resource "azurerm_key_vault" "azurekeyvault" {
   name                = "workspaceexamplekeyvault"
